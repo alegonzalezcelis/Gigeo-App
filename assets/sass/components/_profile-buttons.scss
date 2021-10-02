@@ -1,0 +1,25 @@
+.profile{
+    &__buttons{
+        display: flex;
+        align-items: center;
+
+        @include tablet-breakpoint{
+            display: none;
+          }
+    }
+
+    &__button{
+        padding: 0.5rem 1rem;
+        color: $white;
+        text-decoration: none;
+        margin: 0 0.5rem;
+
+        &--message{
+            background-color:$aquamarine;
+        }
+
+        &--follow{
+            background-color: $bright-red;
+        }
+    }
+}
